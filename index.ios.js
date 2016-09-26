@@ -8,7 +8,7 @@ import {
   View,
   Image,
   ScrollView, ListView,
-  Navigator, TouchableHighlight
+  NavigatorIOS, TouchableHighlight
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -17,15 +17,31 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     fontSize: 30,
     margin: 80
+  },
+  container: {
+    flex: 1
   }
 });
 
+
+class HelloWorld extends Component {
+  render() {
+    return (
+      <Text style={styles.text}>Hello World (Again)</Text>
+    )
+  }
+}
+
 class listerApp extends Component {
   render() {
-    return React.createElement(
-      Text,
-      {style: styles.text},
-      "Yee Haw");
+    return (
+      <NavigatorIOS
+        style={styles.container}
+        initialRoute={{
+          title: 'Lister',
+          component: HelloWorld,
+        }}/>
+    );
   }
 }
 
