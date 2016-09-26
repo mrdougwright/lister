@@ -10,7 +10,7 @@ import {
   ScrollView, ListView,
   NavigatorIOS, TouchableHighlight
 } from 'react-native';
-var SearchPage = require('./SearchPage');
+var ListPage = require('./ListPage');
 
 const styles = StyleSheet.create({
   text: {
@@ -31,7 +31,7 @@ class listerApp extends Component {
         style={styles.container}
         initialRoute={{
           title: 'Lister',
-          component: SearchPage,
+          component: ListPage,
         }}/>
     );
   }
