@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -10,6 +10,7 @@ import {
   ScrollView, ListView,
   NavigatorIOS, TouchableHighlight
 } from 'react-native';
+var SearchPage = require('./SearchPage');
 
 const styles = StyleSheet.create({
   text: {
@@ -23,15 +24,6 @@ const styles = StyleSheet.create({
   }
 });
 
-
-class HelloWorld extends Component {
-  render() {
-    return (
-      <Text style={styles.text}>Hello World (Again)</Text>
-    )
-  }
-}
-
 class listerApp extends Component {
   render() {
     return (
@@ -39,7 +31,7 @@ class listerApp extends Component {
         style={styles.container}
         initialRoute={{
           title: 'Lister',
-          component: HelloWorld,
+          component: SearchPage,
         }}/>
     );
   }
