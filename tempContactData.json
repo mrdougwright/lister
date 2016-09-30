@@ -1,36 +1,35 @@
-
-// https://github.com/rt2zz/react-native-contacts
 {
-  contacts:
+  "contacts":
   [ {
-      recordID: 1,
-      familyName: "Jung",
-      givenName: "Carl",
-      middleName: "",
-      emailAddresses: [{
-        label: "work",
-        email: "carl-jung@example.com",
+      "recordID": 1,
+      "familyName": "Doug",
+      "givenName": "Wright",
+      "middleName": "",
+      "emailAddresses": [{
+        "label": "work",
+        "email": "carl-jung@example.com",
       }],
-      phoneNumbers: [{
-        label: "mobile",
-        number: "(555) 555-5555",
+      "phoneNumbers": [{
+        "label": "mobile",
+        "number": "(555) 123-5555",
       }],
-      thumbnailPath: "",
+      "thumbnailPath": "",
     },
     {
-      recordID: 2,
-      familyName: "Kim",
-      givenName: "Jane",
-      middleName: "",
-      emailAddresses: [{
-        label: "wife",
-        email: "jane@example.com",
+      "recordID": 2,
+      "familyName": "Kim",
+      "givenName": "Jane",
+      "middleName": "",
+      "emailAddresses": [{
+        "label": "wife",
+        "email": "jane@example.com",
       }],
-      phoneNumbers: [{
-        label: "mobile",
-        number: "(555) 123-1234",
+      "phoneNumbers": [{
+        "label": "mobile",
+        "number": "(555) 123-1234",
       }],
-      thumbnailPath: "",
+      "thumbnailPath": "",
     }
   ]
 }
+// https://github.com/rt2zz/react-native-contacts

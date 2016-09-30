@@ -9,7 +9,9 @@ import {
   ActivityIndicator,
   Image
 } from 'react-native';
-import contactList from './tempContactData.json'
+
+import dateGenerator from './dateBlockGenerator.js';
+const dateList = dateGenerator("20161004", "20171004");
 
 const styles = StyleSheet.create({
   container: {
@@ -31,13 +33,8 @@ class ListPage extends Component {
     return (
       <View style={styles.container}>
         {
-          contactList.contacts.map((item, index) => {
-            return (
-              <View>
-                <Text>{item.givenName} {item.familyName}</Text>
-                <Text> {item.phoneNumbers[0].number}</Text>
-              </View>
-            )
+          dateList.map((item, index) => {
+            return (<Text>{item}</Text>)
           })
         }
       </View>
