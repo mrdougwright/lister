@@ -7,7 +7,8 @@ import {
   TextInput,
   TouchableHighlight,
   ActivityIndicator,
-  Image
+  ScrollView,
+  NavigatorIOS
 } from 'react-native';
 
 import dateGenerator from './dateBlockGenerator.js';
@@ -25,19 +26,25 @@ class ListPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      message: 'london'
+      isEditing: false,
+      name: 'testing'
     };
   }
 
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView>
         {
-          dateList.map((item, index) => {
-            return (<Text>{item}</Text>)
+          dateList.map((date, index) => {
+            return (
+              <View key={index}>
+                <Text>Name Here: </Text>
+                <Text>{date}</Text>
+              </View>
+            )
           })
         }
-      </View>
+      </ScrollView>
     );
   }
 }
