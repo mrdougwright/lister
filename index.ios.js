@@ -6,11 +6,11 @@ import {
   Text,
   TextInput,
   View,
-  Image,
   ScrollView, ListView,
   NavigatorIOS, TouchableHighlight
 } from 'react-native';
-var ListPage = require('./ListPage');
+const ListPage = require('./ListPage');
+const SearchPage = require('./SearchPage');
 
 const styles = StyleSheet.create({
   text: {
@@ -32,6 +32,7 @@ class listerApp extends Component {
         initialRoute={{
           title: 'Lister',
           component: ListPage,
+          passProps: { myProp: 'fooey' },
         }}/>
     );
   }
